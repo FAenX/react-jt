@@ -5,7 +5,7 @@
   "main": "dist/index.html",
   "scripts": {
     "start": "parcel serve -p 3001 ./src/index.html",
-    "build": "parcel build --dist-dir ./dist --no-scope-hoist ./src/index.html",
+    "build": "parcel build --dist-dir ./dist ./src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "kipronofb@outlook.com",
