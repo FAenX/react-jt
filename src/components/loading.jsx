@@ -6,7 +6,7 @@ const Loading=(state)=>{
     return(
         <>
         { state.loading?
-        (<progress class="progress is-small is-primary" max="100">15%</progress>):
+        (<progress className="progress is-small is-primary" max="100">15%</progress>):
         <div></div>
         }
         </>

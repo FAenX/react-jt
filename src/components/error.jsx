@@ -13,8 +13,8 @@ const Error=({state, dispatch})=>{
         <>
         {
             state.error ?
-            <div class="notification is-danger is-light">
-            <button class="delete" onClick={deleteNotification}></button>
+            <div className="notification is-danger is-light">
+            <button className="delete" onClick={deleteNotification}></button>
             Error
         
             </div>:<div></div>
