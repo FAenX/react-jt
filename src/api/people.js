@@ -1,0 +1,20 @@
+import axios from 'axios'
+
+export const getPeople = async ()=>{
+    try{
+        return await axios.get(`/api/`)
+    }catch(error){
+        return error
+    }
+    
+}
+
+export const postPeople =async (data)=>{
+    try{
+        return await axios.post(`/api/`, {...data})
+    }catch(error){
+        return error
+    }
+
+    
+}
