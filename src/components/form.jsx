@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {postPerson} from '../mutations/updatePeople'
 import Loading from './loading'
+import Error from './error'
 
 
 const Form=()=>{
@@ -29,6 +30,7 @@ const Form=()=>{
 
     return(
         <>
+        <Error/>
         <div className="is-flex is-justify-content-center is-size-4 has-text-weight-bold">Form</div>
         {/* name */}
         <div className="field">

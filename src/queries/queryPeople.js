@@ -8,14 +8,11 @@ export const queryPeople=async ()=>{
     const {dispatch} = store
     const state = store.getState()
 
-    
-    const response = await getPeople()
-    
-    const people = response.data
-    
-
-    dispatch({type:'SET_STATE', state: people.data})
-
-
-   
+    try{
+      const response = await getPeople()
+      const people = response.data
+      dispatch({type:'SET_STATE', state: people.data})
+    }catch(e){
+      dispatch({type:'SET_ERROR', state: true})
+    }
   }
