@@ -36,7 +36,7 @@ const Form=()=>{
         <div className="field">
             <label className="label">Full name</label>
             <div className="control has-icons-left has-icons-right">
-                <input className="input is-success" type="text" placeholder="Text input" value={person.name} id="name" onChange={onChange}/>
+                <input className="input is-success" type="text" placeholder="Text input" id="name" onChange={onChange}/>
                 <span className="icon is-small is-left">
                 <i className="fas fa-user"></i>
                 </span>
@@ -49,7 +49,7 @@ const Form=()=>{
         <div className="field">
             <label className="label">Age</label>
             <div className="control has-icons-left has-icons-right">
-                <input className="input is-success" type="number" placeholder="Age" value={person.age} id="age" onChange={onChange}/>
+                <input className="input is-success" type="number" placeholder="Age" id="age" onChange={onChange}/>
                 <span className="icon is-small is-left">
                 <i className="far fa-calendar"></i>
                 </span>
