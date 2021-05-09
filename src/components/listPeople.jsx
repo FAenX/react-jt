@@ -1,7 +1,7 @@
 import React, {useMemo} from 'react'
 import {queryPeople} from '../queries/queryPeople'
 import {connect} from 'react-redux'
-import { uuid } from 'uuid'
+
 
 const ListPeople =(state)=>{
 
@@ -14,7 +14,7 @@ const ListPeople =(state)=>{
             {state.peopleReducer && 
             state.peopleReducer.length > 0 ? 
                 (state.peopleReducer.map(person=>{
-                    return (<div id={uuid()} className="is-flex m-2 is-justify-content-space-between">
+                    return (<div id={Math.random()} className="is-flex m-2 is-justify-content-space-between">
                         <div>Name: {person.name}</div>
                         <div>Age: {person.age}</div>
 
